@@ -6,29 +6,34 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
-   
-   char sjp1[50] = "São José dos Pinhais: SJP01.";
-   long long int populacaosjp;
+   char parana = 'P';
+   char estado[20];
+   char sjp[40];
+   int populacaosjp;
    float pibsjp;
    float areasjp;
    int pontostursjp;
 
-    printf("Digite a população de são José dos Pinhais-PR.\n");
-    scanf("%lld", &populacaosjp);
-
-    printf("Digite o PIB de São José dos Pinhais-PR:\n");
-    scanf("%f", &pibsjp);
-   
-    printf("Digite a área da cidade de São José dos Pinhais-PR, em km2:\n");
-    scanf("%f", &areasjp);
+    printf("Digite o código da carta:\n");
+    scanf("%s", &estado);
+    printf("Digite o nome da cidade:");
+    scanf("%s", &sjp);
     
-    printf("Digite o número de pontos turísticos encontrados na cidade de São José dos Pinhais:\n");
+    printf("Digite a população da cidade.\n");
+    scanf("%d", &populacaosjp);
+    printf("Digite o PIB:\n");
+    scanf("%f", &pibsjp);
+    printf("Digite a área da cidade:\n");
+    scanf("%f", &areasjp);
+    printf("Digite o número de pontos turísticos encontrados na cidad::\n");
     scanf("%d", &pontostursjp);
 
-    printf("%s\n", sjp1);
-    printf("População: %lld habitantes.\n", populacaosjp);
+    printf("Estado:%c.\n", parana);
+    printf("Código da carta:%s\n", estado);
+    printf("Nome da cidade:%s.\n", sjp, sjp2);
+    printf("População:%d habitantes.\n", populacaosjp);
     printf("O PIB de SJP é: %.2f bilhões de reais.\n", pibsjp);//corrigir aqui.
-    printf("São José dos Pinhais tem %.2f km2.\n", areasjp);
+    printf("A cidade tem %.2f km2.\n", areasjp);
     printf("Número de pontos turísticos: %d.\n", pontostursjp);
 
 
